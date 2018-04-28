@@ -15,12 +15,7 @@ class School
     end
     #adds student to the grade array
     @roster.each do |grades|
-      grades.each do |classes|
-        if grades == grade
-          classes << student
-        end
-      end
-    end
+      grades << student if grades == grade
   end
 
 end
