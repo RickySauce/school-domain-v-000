@@ -13,11 +13,12 @@ class School
     if !@roster.any? do |existing_grades|
       existing_grades == grades
       @roster[grade] = Array.new && @roster[grade] << student
-    else @roster.any? do |existing_grades|
+    end
+    if @roster.any? do |existing_grades|
       existing_grades == grades
       @roster[grade] << student
     end
-  end
+  
     #if it does, do nothing
     #if it doesn't make a new grade
     #add student to that grade
