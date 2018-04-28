@@ -7,11 +7,11 @@ class School
     @roster = Hash.new
   end
 
-  def add_student(grade,student)
-    @roster[grade:] = Array.new if !@roster.any? do |existing_grades|
+  def add_student(student,grade)
+    @roster[grade] = Array.new if !@roster.any? do |existing_grades|
       existing_grades == grade
     end
-    @roster[grade:] << student
+    @roster[grade] << student
   end
 
 end
