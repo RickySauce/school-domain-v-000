@@ -12,7 +12,12 @@ class School
     @roster[grade] = [] unless @roster.any? do |existing_grades|
       existing_grades == grade
     end
-    @roster[grade].push student
+    @roster.each do |grades|
+      grades.each do |classes|
+        classes << student if grades == grade
+      end
+    end
+         
   end
 
 end
