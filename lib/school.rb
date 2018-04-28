@@ -13,6 +13,7 @@ class School
       existing_grades == grade
       @roster[grade] = Array.new && @roster[grade] << student
     end
+    end
   end
 
 end
