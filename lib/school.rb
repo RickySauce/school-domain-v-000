@@ -12,7 +12,6 @@ class School
     @roster[grade] = [] @roster.any? do |existing_grades|
       existing_grades == grade
     end
-    @roster
     @roster[grade] << student
   end
 
