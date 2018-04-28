@@ -16,4 +16,5 @@ class School
     #adds student to the grade array
     @roster[grade] << student
   end
+  binding.pry
 end
