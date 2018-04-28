@@ -20,8 +20,13 @@ class School
   def grade(number)
     @roster.find do |grade, classes|
       return classes if grade == number
-    end
+  end
 
+  def sort
+    @roster.sort!
+  end
+  
+    
   end
 
 end
