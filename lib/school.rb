@@ -12,8 +12,6 @@ class School
     @roster[grade] = Array.new if !@roster.any? do |existing_grades|
       existing_grades == grade
     end
-    @roster.each do |grades|
-      @roster[grade] << student if grades == grade
     end
 
   end
