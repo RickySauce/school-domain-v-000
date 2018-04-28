@@ -12,7 +12,7 @@ class School
     @roster[grade] = [] unless @roster.any? do |existing_grades|
       existing_grades == grade
     end
-    @roster[grade][student]
+    @roster[:grade][student]
   end
 
 end
