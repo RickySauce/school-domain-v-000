@@ -11,8 +11,8 @@ class School
   def add_student(student,grade)
     if !@roster.any? do |existing_grades|
       existing_grades == grade
-      @roster[grade] = Array.new && @roster[grade] << student
     end
+      @roster[grade] = Array.new && @roster[grade] << student
     end
   end
 
