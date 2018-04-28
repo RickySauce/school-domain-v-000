@@ -1,11 +1,12 @@
 # code here!
 class School
 
+  attr_reader roster:
+
   def initialize(name)
     @name = name
-    def roster
-      roster = Hash.new
-    end
+    @roster = Hash.new
+
   end
 
 end
