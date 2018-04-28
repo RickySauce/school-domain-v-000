@@ -14,5 +14,6 @@ class School
       existing_grades == grade
     end
   end
+  end
 
 end
