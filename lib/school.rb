@@ -17,7 +17,7 @@ class School
         classes << student if grades == grade
       end
     end
-         
+
   end
 
 end
