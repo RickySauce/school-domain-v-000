@@ -13,6 +13,5 @@ class School
     if !@roster.any? do |existing_grades|
       existing_grades == grade
     end
-  end
 
 end
