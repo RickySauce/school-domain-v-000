@@ -1,3 +1,4 @@
+require 'pry'
 # code here!
 class School
   attr_reader :roster
@@ -10,8 +11,9 @@ class School
   def add_student(student,grade)
     @roster[grade] = Array.new if !@roster.any? do |existing_grades|
       existing_grades == grade
+      binding.pry
     end
-    
+
   end
 
 end
