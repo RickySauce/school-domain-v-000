@@ -17,4 +17,11 @@ class School
     @roster[grade] << student
   end
 
+  def grade(number)
+    @roster.find do |grade, classes|
+      return classes if grade == number
+    end
+
+  end
+
 end
