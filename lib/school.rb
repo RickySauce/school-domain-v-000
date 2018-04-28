@@ -1,10 +1,11 @@
 # code here!
 class School
 
-ROSTER = Hash.new
+
 
   def initialize(name)
     @name = name
+    roster = Hash.new
   end
 
 end
