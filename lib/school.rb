@@ -13,7 +13,6 @@ class School
     @roster[grade] = Array.new unless @roster.any? do |existing_grades,classes|
       existing_grades == grade
       @roster[grade][classes] << student
-      binding.pry
     end
     #adds student to the grade array
     @roster[grade] << student
