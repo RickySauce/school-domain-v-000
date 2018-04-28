@@ -10,8 +10,9 @@ class School
 
   def add_student(student,grade)
     #creates a new grade if it doesn't already exist
-    @roster[grade] = Array.new unless @roster.any? do |existing_grades|
+    @roster[grade] = Array.new unless @roster.any? do |existing_grades,classes|
       existing_grades == grade
+      @roster[grade][classes] << student
       binding.pry
     end
     #adds student to the grade array
