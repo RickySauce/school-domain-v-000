@@ -16,6 +16,7 @@ class School
     else @roster.any? do |existing_grades|
       existing_grades == grades
       @roster[grade] << student
+    end
     #if it does, do nothing
     #if it doesn't make a new grade
     #add student to that grade
