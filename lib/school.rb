@@ -13,7 +13,6 @@ class School
       existing_grades == grade
     end
       @roster[grade] = Array.new && @roster[grade] << student
-    end
   end
 
 end
