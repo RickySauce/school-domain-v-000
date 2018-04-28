@@ -20,6 +20,7 @@ class School
           classes << student
         end
       end
+    end
   end
 
 end
