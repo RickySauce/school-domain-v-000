@@ -15,5 +15,7 @@ class School
     end
     #adds student to the grade array
     @roster[grade] << student
+    @roster
     end
+
 end
