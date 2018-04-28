@@ -9,11 +9,16 @@ class School
   end
 
   def add_student(student,grade)
-    @roster[grade] = Array.new if @roster.any? do |existing_grades|
-      existing_grades != grade
-    end
-    @roster[grade] << student
-    binding.pry
+    #does this grade already exit?
+    if !@roster.any? do |existing_grades|
+      existing_grades == grades
+      @roster[grade] = Array.new && @roster[grade] << student
+    else @roster.any? do |existing_grades|
+      existing_grades == grades
+      @roster[grade] << student
+    #if it does, do nothing
+    #if it doesn't make a new grade
+    #add student to that grade
   end
 
 end
