@@ -11,7 +11,7 @@ class School
     @roster[student] = Array.new if !@roster.any? do |existing_grades|
       existing_grades == grade
     end
-    @roster[grade] << student
+    @roster[student] << grade
   end
 
 end
