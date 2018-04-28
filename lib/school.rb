@@ -3,7 +3,9 @@ class School
 
   def initialize(name)
     @name = name
-    roster = {}
+    def roster
+      roster = Hash.new
+    end
   end
 
 end
